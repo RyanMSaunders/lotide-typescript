@@ -7,6 +7,8 @@ export const head= <T extends Exclude<any, object | any[]>>(arr: T[]): T | undef
 
 console.log(head([5, 6, 7]));
 
+
+
 /**
  Create a function head which returns the first item in the array.
 

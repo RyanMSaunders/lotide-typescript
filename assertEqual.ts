@@ -4,8 +4,16 @@ export const assertEqual = function (actual: Exclude<any, object | any[]>, expec
   
 };
 
-assertEqual(1, 3)
-assertEqual("hi", "hi")
+
+
+/**
+ The function has two parameters, actual and expected, each annotated with
+  Exclude<any, object | any[]>.
+This annotation limits the types that actual and expected can be. 
+Specifically, they can be any type except an object or an array.
+
+The function is annotated with : void, meaning it doesn’t return a value.
+ */
 
 
 
